@@ -110,7 +110,7 @@ public class UserInfoTest {
         User user = null;
         try {
             new User().yamlWrite("Bob", "54321", "bob@gmail.com");
-            userYML = new File("src/main/DataFiles/BobInfo.yml");
+            userYML = new File("DataFiles/BobInfo.yml");
             user = new User().yamlReadFile(userYML);
         } catch (IOException e) {
             fail();
